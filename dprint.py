@@ -23,7 +23,8 @@ def dprint(value):
             break
 
     if var_name:
-        print(f">>>>>>>>>>>>> {var_name} = {value} ({relative_filename} : {lineno})")
+        print(f">>>>>>>>>>>>> {var_name} = {value} {type(value)} ({relative_filename} : {lineno})")
     else:
-        print(f">>>>>>>>>>>>> Value = {value} ({relative_filename} : {lineno})")
+        print(f">>>>>>>>>>>>> Value = {value} {type(value)} ({relative_filename} : {lineno})")
+
 
